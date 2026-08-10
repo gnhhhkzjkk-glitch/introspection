@@ -1,4 +1,4 @@
-![Introspection](2025812.pdf)
+![Introspection](readme_bild_introspection.jpg)
 # Introspection
 
 **Titel:** Introspection  
