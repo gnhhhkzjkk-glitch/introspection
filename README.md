@@ -1,4 +1,11 @@
+![Faktizität](IMG_20250702_140345.jpg)
 # Introspection
+
+**Titel:** Introspection  
+**Technik:** Öl auf Leinwand  
+**Größe:** 140 × 100 × 4,5 cm  
+**Jahr:** 2025  
+**Preis:** € 4.300
 
 ## Bildbeschreibung
 
