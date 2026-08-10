@@ -1,1 +1,101 @@
 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introspectioni – Gemälde</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 25px;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #222;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    h1 {
+      margin-bottom: 5px;
+    }
+    .details {
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+
+    <img src="readme_bild_introspection.jpg" alt="Gemälde Introspection">
+
+    <h1>Introspection</h1>
+
+    <p class="details">
+      Öl auf Leinwand · 140 × 100 × 4,5 cm · 2025
+    </p>
+
+    <p><strong>Preis: € 4.300</strong></p>
+
+    <h2>Bildbeschreibung</h2>
+
+<div id="deutsch">
+  <p>Eine in sich gespannte Figur auf einem Hocker blickt direkt nach außen - fordernd, suchend, fragend. Ihre Körperhaltung vereint Konzentration und latente Anspannung.
+  
+Dieser Moment der Haltung scheint eingefroren, als würde sich die Figur im Übergang von einer inneren Suche hin zu einer bewussten Positionierung befinden. 
+
+Der Schriftzug im unteren Bildrand verstärkt die Aussage und rückt die Rolle der Kunst als gesellschaftliche Grundlage in den Vordergrund.
+  
+Kunst ist hier nicht ein dekoratives Beiwerk, sondern sichtbar gemachte Notwendigkeit.</p>
+</div>
+    
+<div id="englisch">
+  <p>A tense, self-contained figure sitting on a stool looks directly outward — challenging, searching, questioning. Their posture combines concentration with a latent sense of tension.
+
+This moment of stillness appears frozen, as if the figure were caught in the transition from an inner search toward a conscious positioning of the self.
+
+The lettering along the lower edge of the image reinforces the statement and brings the role of art as a social foundation to the forefront.
+
+Here, art is not a decorative accessory, but a visible expression of necessity.</p>
+</div>
+
+<div>
+  <button onclick="vorlesenDeutsch()">🇩🇪 Deutsch vorlesen</button>
+  <button onclick="vorlesenEnglisch()">🇬🇧 English vorlesen</button>
+</div>
+
+<script>
+function vorlesenDeutsch() {
+  const text = document.getElementById("deutsch").innerText;
+  const sprache = new SpeechSynthesisUtterance(text);
+  sprache.lang = "de-DE";
+  speechSynthesis.cancel();
+  speechSynthesis.speak(sprache);
+}
+
+function vorlesenEnglisch() {
+  const text = document.getElementById("englisch").innerText;
+  const sprache = new SpeechSynthesisUtterance(text);
+  sprache.lang = "en-GB";
+  speechSynthesis.cancel();
+  speechSynthesis.speak(sprache);
+}
+</script>
+    
+<button onclick="vorlesen()">🔊 Beschreibung vorlesen</button>
+
+<script>
+
+  </div>
+</body>
+</html>
