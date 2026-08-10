@@ -1,4 +1,4 @@
-![Faktizität](IMG_20250702_140345.jpg)
+![Introspection](2025812.pdf)
 # Introspection
 
 **Titel:** Introspection  
